@@ -47,6 +47,7 @@ git clone https://github.com/rgthree/rgthree-comfy.git && (cd rgthree-comfy && g
 git clone https://github.com/WASasquatch/was-node-suite-comfyui.git && (cd was-node-suite-comfyui && git checkout ea935d1044ae5a26efa54ebeb18fe9020af49a45) || echo '⚠️ WAS 실패'
 git clone https://github.com/kijai/ComfyUI-KJNodes.git && (cd ComfyUI-KJNodes && git checkout e2ce0843d1183aea86ce6a1617426f492dcdc802) || echo '⚠️ KJNodes 실패'
 git clone https://github.com/cubiq/ComfyUI_essentials.git && (cd ComfyUI_essentials && git checkout 9d9f4bedfc9f0321c19faf71855e228c93bd0dc9) || echo '⚠️ Essentials 실패'
+git clone https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes.git && (cd ComfyUI_Comfyroll_CustomNodes && git checkout d78b780ae43fcf8c6b7c6505e6ffb4584281ceca) || echo '⚠️ Comfyroll 실패'
 git clone https://github.com/city96/ComfyUI-GGUF.git && (cd ComfyUI-GGUF && git checkout d247022e3fa66851c5084cc251b076aab816423d) || echo '⚠️ GGUF 실패'
 git clone https://github.com/Gourieff/ComfyUI-ReActor.git && (cd ComfyUI-ReActor && git checkout d60458f212e8c7a496269bbd29ca7c6a3198239a) || echo '⚠️ ReActor 실패'
 git clone https://github.com/yolain/ComfyUI-Easy-Use.git && (cd ComfyUI-Easy-Use && git checkout 11794f7d718dc38dded09e677817add796ce0234) || echo '⚠️ EasyUse 실패'
