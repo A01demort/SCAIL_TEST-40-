@@ -60,6 +60,8 @@ git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation.git && (cd C
 git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git && (cd ComfyUI-Impact-Pack && git checkout 51b7dcd) || echo '⚠️ Impact-Pack 실패(13)'
 git clone https://github.com/kijai/ComfyUI-WanVideoWrapper.git && (cd ComfyUI-WanVideoWrapper && git checkout bf1d77f) || echo '⚠️ ComfyUI-WanVideoWrapper 설치 실패(14)'
 git clone https://github.com/kijai/ComfyUI-WanAnimatePreprocess.git && (cd ComfyUI-WanAnimatePreprocess && git checkout 1a35b81) || echo '⚠️ ComfyUI-WanAnimatePreprocess 설치 실패(15)'
+git clone https://github.com/kijai/ComfyUI-SCAIL-Pose.git && (cd ComfyUI-SCAIL-Pose && git checkout 11402b1) || echo '⚠️ ComfyUI-SCAIL-Pose 설치 실패(16)'
+
 
 )
 
@@ -99,7 +101,7 @@ echo "🚀 다음 단계로 넘어갑니다"
 echo -e "\n====🎓 AI 교육 & 커뮤니티 안내====\n"
 echo -e "1. Youtube : https://www.youtube.com/@A01demort"
 echo "2. 교육 문의 : https://a01demort.com"
-echo "3. Udemy 강의 : https://bit.ly/comfyclass"
+echo "3. CLASSU 강의 : https://classu.co.kr/me/19375"
 echo "4. Stable AI KOREA : https://cafe.naver.com/sdfkorea"
 echo "5. 카카오톡 오픈채팅방 : https://open.kakao.com/o/gxvpv2Mf"
 echo "6. CIVITAI : https://civitai.com/user/a01demort"
