@@ -8,7 +8,7 @@ HUGGINGFACE_TOKEN="Huggingface_Token_key"
 # ====================================
 # 🛠️ 사용자 설정값
 # ====================================
-MAX_PARALLEL=5
+MAX_PARALLEL=8
 
 # ====================================
 # 📂 파일 설정
@@ -54,27 +54,40 @@ else
 fi
 
 # ====================================
-# 📌 다운로드 리스트 (4개 파일)
+# 📌 다운로드 리스트 (8개 파일)
 # ====================================
 downloads=(
 
-  # 1. UNet 모델 - Wan2.1_14B_VACE-Q5_K_M.gguf
-  "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q5_K_M.gguf|/workspace/ComfyUI/models/unet/Wan2.1_14B_VACE-Q5_K_M.gguf"
+  # 1. Detection 모델 (YOLO) - yolov10m.onnx
+  "https://huggingface.co/Wan-AI/Wan2.2-Animate-14B/resolve/main/process_checkpoint/det/yolov10m.onnx|/workspace/ComfyUI/models/detection/yolov10m.onnx"
 
-  # 2. LoRA 모델 - Wan2.1_CausVid_14B_lora_rank32_v2
+  # 2. Pose 모델 (ViTPose WholeBody) - vitpose-l-wholebody.onnx
+  "https://huggingface.co/JunkyByte/easy_ViTPose/resolve/main/onnx/wholebody/vitpose-l-wholebody.onnx|/workspace/ComfyUI/models/detection/vitpose-l-wholebody.onnx"
+
+  # 3. CLIP Vision 모델 - clip_vision_h.safetensors
+  "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/clip_vision/clip_vision_h.safetensors|/workspace/ComfyUI/models/clip_vision/clip_vision_h.safetensors"
+
+  # 4. LoRA 모델 1 - Wan2.1_CausVid_14B_lora_rank32_v2
   "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors|/workspace/ComfyUI/models/loras/Wan21_CausVid_14B_T2V_lora_rank32_v2.safetensors"
 
-  # 3. VAE 모델 - Wan_2.1_vae
+  # 5. LoRA 모델 2 (Lightx2v I2V) - lightx2v_I2V_14B_480p_cfg_step_distill_rank32_bf16.safetensors
+  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/Lightx2v/lightx2v_I2V_14B_480p_cfg_step_distill_rank32_bf16.safetensors|/workspace/ComfyUI/models/loras/lightx2v_I2V_14B_480p_cfg_step_distill_rank32_bf16.safetensors"
+
+  # 6. Diffusion 모델 (SCAIL Preview GGUF) - Wan21-14B-SCAIL-preview_comfy-Q5_K_M.gguf
+  "https://huggingface.co/vantagewithai/SCAIL-Preview-GGUF/resolve/main/Wan21-14B-SCAIL-preview_comfy-Q5_K_M.gguf|/workspace/ComfyUI/models/diffusion_models/Wan21-14B-SCAIL-preview_comfy-Q5_K_M.gguf"
+
+  # 7. VAE 모델 - Wan_2.1_vae
   "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/vae/wan_2.1_vae.safetensors|/workspace/ComfyUI/models/vae/wan_2.1_vae.safetensors"
 
-  # 4. 텍스트 인코더 - umt5_xxl_fp16
-  "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp16.safetensors|/workspace/ComfyUI/models/text_encoders/umt5_xxl_fp16.safetensors"
-  
-  # 5. 텍스트 인코더 - umt5_xxl_fp8_e4m3fn_scaled
-  "https://huggingface.co/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/main/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors|/workspace/ComfyUI/models/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+  # 8. Text Encoder 모델 (UMT5 XXL) - umt5-xxl-enc-fp8_e4m3fn.safetensors
+  "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-fp8_e4m3fn.safetensors|/workspace/ComfyUI/models/text_encoders/umt5-xxl-enc-fp8_e4m3fn.safetensors"
 
-  # 6. UNet 모델 - Wan2.1_14B_VACE-Q8_0.gguf
-  "https://huggingface.co/QuantStack/Wan2.1_14B_VACE-GGUF/resolve/main/Wan2.1_14B_VACE-Q8_0.gguf|/workspace/ComfyUI/models/unet/Wan2.1_14B_VACE-Q8_0.gguf"
+
+
+# Q8모델 필요할경우 주석 해제 후 사용
+# 6. Diffusion 모델 (SCAIL Preview GGUF) - Wan21-14B-SCAIL-preview_comfy-Q8_0.gguf
+# "https://huggingface.co/vantagewithai/SCAIL-Preview-GGUF/resolve/main/Wan21-14B-SCAIL-preview_comfy-Q8_0.gguf|/workspace/ComfyUI/models/diffusion_models/Wan21-14B-SCAIL-preview_comfy-Q8_0.gguf"
+
 
 )
 
