@@ -82,6 +82,10 @@ downloads=(
   # 8. Text Encoder 모델 (UMT5 XXL) - umt5-xxl-enc-fp8_e4m3fn.safetensors
   "https://huggingface.co/Kijai/WanVideo_comfy/resolve/main/umt5-xxl-enc-fp8_e4m3fn.safetensors|/workspace/ComfyUI/models/text_encoders/umt5-xxl-enc-fp8_e4m3fn.safetensors"
 
+  # 9. NLF 모델 (Multi) - nlf_l_multi_0.3.2.torchscript
+  "https://huggingface.co/spaces/yanboding/MTVCrafter/resolve/main/nlf_l_multi_0.3.2.torchscript|/workspace/ComfyUI/models/nlf/nlf_l_multi_0.3.2.torchscript"
+
+
 
 
 # Q8모델 필요할경우 주석 해제 후 사용
