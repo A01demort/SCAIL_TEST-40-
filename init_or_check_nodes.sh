@@ -43,7 +43,7 @@ cd /workspace/ComfyUI/custom_nodes || exit 0
 
 git clone https://github.com/ltdrdata/ComfyUI-Manager.git && (cd ComfyUI-Manager && git checkout 116e068ac31c8b76860cd7aa369d5aacd61d27dc) || echo '⚠️ Manager 실패'
 git clone https://github.com/pythongosssss/ComfyUI-Custom-Scripts.git && (cd ComfyUI-Custom-Scripts && git checkout f2838ed5e59de4d73cde5c98354b87a8d3200190) || echo '⚠️ Scripts 실패'
-git clone https://github.com/rgthree/rgthree-comfy.git && (cd rgthree-comfy && git checkout 110e4ef1dbf2ea20ec39ae5a737bd5e56d4e54c2) || echo '⚠️ rgthree 실패'
+git clone https://github.com/rgthree/rgthree-comfy.git && (cd rgthree-comfy && git checkout 8ff50e4521881eca1fe26aec9615fc9362474931) || echo '⚠️ rgthree 실패(1)'
 git clone https://github.com/WASasquatch/was-node-suite-comfyui.git && (cd was-node-suite-comfyui && git checkout ea935d1044ae5a26efa54ebeb18fe9020af49a45) || echo '⚠️ WAS 실패'
 git clone https://github.com/kijai/ComfyUI-KJNodes.git && (cd ComfyUI-KJNodes && git checkout e2ce0843d1183aea86ce6a1617426f492dcdc802) || echo '⚠️ KJNodes 실패'
 git clone https://github.com/cubiq/ComfyUI_essentials.git && (cd ComfyUI_essentials && git checkout 9d9f4bedfc9f0321c19faf71855e228c93bd0dc9) || echo '⚠️ Essentials 실패'
